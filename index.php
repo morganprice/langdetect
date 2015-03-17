@@ -1,5 +1,5 @@
 <?php
-$default = "en-gb";
+$default_lang = "en-gb";
 
 header('Content-Type: text/plain');
 
@@ -66,6 +66,6 @@ if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
             redirect($lang . '/' . $request);
         }
     }
-    redirect($default . '/' . $request);
+    redirect($default_lang . '/' . $request);
 }
 ?>
