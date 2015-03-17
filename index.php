@@ -8,6 +8,12 @@ function p($s)
     print("$s\n");
 }
 
+/**
+ * Removes all invalid characters from the given language tag,
+ * converting it to lower case and discaring the weight.
+ * @author Simon Morgan <sjm@sjm.io>
+ * @param string $lang
+ */
 function sanitise($lang)
 {
     $lang = strtolower($lang);
@@ -31,8 +37,8 @@ function sanitise($lang)
 }
 
 /**
- * Given a string listing acceptable languages as defined in RFC2616, return an
- * array of sanitised versions of each language tag.
+ * Given a string listing acceptable languages as defined in RFC2616,
+ * return an array of sanitised versions of each language tag.
  * @author Simon Morgan <sjm@sjm.io>
  * @param string $langs
  */
