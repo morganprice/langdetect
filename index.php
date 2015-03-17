@@ -3,7 +3,7 @@ $default_lang = "en-gb";
 
 header('Content-Type: text/plain');
 
-function p($s)
+function p(/*.string.*/ $s)
 {
     print("$s\n");
 }
@@ -56,7 +56,7 @@ function sanitise_langs($langs)
     return $sanitised;
 }
 
-function redirect($url, $statusCode = 303)
+function redirect(/*.string.*/ $url, $statusCode = 303)
 {
     $url = trim($url, "/");
     header('Location: ' . $url, true, $statusCode);
