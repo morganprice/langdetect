@@ -3,11 +3,6 @@ $default_lang = "en-gb";
 
 header('Content-Type: text/plain');
 
-function p(/*.string.*/ $s)
-{
-    print("$s\n");
-}
-
 /**
  * Removes all invalid characters from the given language tag,
  * converting it to lower case and discaring the weight.
